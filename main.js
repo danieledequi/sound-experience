@@ -1,18 +1,35 @@
-function tocaSomPom () {
-    document.querySelector('#som_tecla_pom').play();
+function tocaSom (IdElementoAudio) {
+    document.querySelector(IdElementoAudio).play();
 }
 
 document.querySelectorAll('.tecla')
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-let contador = 0;
 
-while (contador < listaDeTeclas.length) {
-    listaDeTeclas[contador].onclick = tocaSomPom;
+for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
-    contador = contador + 1;
+    const tecla = listaDeTeclas[contador];
+    const instrumento = tecla.classList[1];
+    const idAudio = `#som_${instrumento}`;  //template string
+   // console.log;
 
-    console.log(contador);
+    tecla.onclick = function () {
+       tocaSom (idAudio) 
+    }
+
+    tecla.onkeydown = function (evento) {
+       
+       if (evento.code == 'Space' || evento.code == 'Enter') {
+        tecla.classList.add('ativa');
+    }
+
+    tecla.onkeyup = function () {
+        tecla.classList.remove('ativa');
+    }   
+  }
 }
 
+
+
+//let contador = 0; criada a variável que chamei de contador, que é verificada a cada repetição do while e tem seu valor alterado a cada repetição.
