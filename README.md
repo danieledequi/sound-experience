@@ -7,3 +7,6 @@ Ao clicar em um dos botões, será reproduzido o respectivo som. Porém, também
 ![image](https://github.com/danieledequi/sound-experience/assets/113129822/2bc79590-85a9-49a1-8113-dbdbf036c2be)
 
 
+Acesse através do link https://sound-experience-lemon.vercel.app/
+
+
