@@ -12,9 +12,9 @@ O Sound Experience tem um teclado digitial com 9 botões, cada botão reproduzir
   
 ✔️ Técnicas e tecnologias utilizadas
   
-    • HTML
-    • CSS
-    • JavaScript.
+  > HTML
+  > CSS
+  > JavaScript.
   
   
 📁 Acesso ao projeto
